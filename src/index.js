@@ -1,12 +1,49 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as ReactRouterDOM from "react-router-dom";
+import {Provider} from "react-redux";
+
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {PersistGate} from "redux-persist/integration/react";
+import { persistor} from "./redux/store";
+import {store} from "./redux/store";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const Router = ReactRouterDOM.BrowserRouter;
+
+ReactDOM.render(
+    // <App />, document.getElementById('root')
+
+    // <Router>
+    //     <Switch>
+    //         <Route exact path="/" component={App} />
+    //         <Route exact path="/todo" component={TodoPage} />
+    //         <Route exact path="/about" component={AboutPage} />
+    //         <Route component={NotFoundPage} />
+    //     </Switch>
+    // </Router>,
+    // document.getElementById('root')
+
+    //<Provider store={store}>
+    //    <Router>
+    //        <Switch>
+    //            <Route exact path="/" component={App} />
+    //            {/*<Route exact path="/todo" component={TodoPage} />*/}
+    //            {/*<Route exact path="/about" component={AboutPage} />*/}
+    //            {/*<Route component={NotFoundPage} />*/}
+    //        </Switch>
+    //    </Router>
+    //</Provider>,
+    //document.getElementById('root')
+
+    <Provider store={store}>
+        <PersistGate persistor={persistor} loading={null}>
+           <Router>
+               <App/>
+           </Router>
+        </PersistGate>
+    </Provider>,
+    document.getElementById('root')
+
+);

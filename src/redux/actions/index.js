@@ -18,12 +18,14 @@ export function searchResponseAction(searchResults) {
 }
 
 export function clearSearchResponseAction() {
+    console.log('clearSearchResponseAction');
     return {
         type: CLEAR_RESPONSE
     };
 }
 
 export function fetchSearchByPlaceNameAction(_page) {
+    clearSearchResponseAction();
     return dispatch => {
         const placeName = store.getState().search;
         const page = _page ? _page : '1';

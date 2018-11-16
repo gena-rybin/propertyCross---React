@@ -7,8 +7,8 @@ import {clearSearchResponseAction, redirectToResultsPageAction} from "../../redu
 
 class ResultsPage extends Component {
     componentWillUnmount() {
-        this.props.clearSearchResponse();
         this.props.redirectToResultsPage(false);
+        // this.props.clearSearchResponse();
     }
 
     render() {
@@ -34,7 +34,6 @@ class ResultsPage extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state);
     return {
         listings: state.response.listings,
         total_results: state.response.total_results,
@@ -44,7 +43,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        clearSearchResponse: bindActionCreators(clearSearchResponseAction, dispatch),
+        // clearSearchResponse: bindActionCreators(clearSearchResponseAction, dispatch),
         redirectToResultsPage: bindActionCreators(redirectToResultsPageAction, dispatch),
     }
 }

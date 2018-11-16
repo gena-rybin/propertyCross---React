@@ -3,7 +3,7 @@ import {
     searchReducer,
     responseReducer,
     addToSearchesReducer, redirectToResultsPageReducer,
-} from "./main-page-reducers";
+} from "./search-page-reducers";
 
 const rootReducer = combineReducers({
     response: responseReducer,

@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
           <HeaderBlock></HeaderBlock>
           <Switch>
-          <Route exact path="/" component={SearchPage} />
+          <Route exact path={routes.root} component={SearchPage} />
           <Route exact path={routes.results} component={ResultsPage}/>
           <Route component={NotFound}/>
           </Switch>

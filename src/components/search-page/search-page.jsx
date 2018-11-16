@@ -4,7 +4,7 @@ import {bindActionCreators} from 'redux'
 import {fetchSearchByPlaceNameAction, setSearchFieldAction} from "../../redux/actions";
 import {connect} from "react-redux";
 import SearchesComponent from "./searches";
-import {Redirect} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 import {routes} from "../../services/routes";
 
 
@@ -27,14 +27,23 @@ class SearchPage extends Component {
         console.log('submit');
         // this.props.handleParentSubmit();
         this.props.fetchSearchByPlaceName();
+        // if (this.props.response && this.props.response.listings && this.props.response.listings.length) {
+        //
+        // }
     };
 
     render() {
-        if (this.props.redirectToResultsPage) {
+        // if (this.props.redirectToResultsPage) {
+        //     return (
+        //         <Redirect to={routes.results} />
+        //     )
+        // }
+        if (this.props.response && this.props.response.listings && this.props.response.listings.length) {
             return (
                 <Redirect to={routes.results} />
             )
         }
+
         return (
             <div className="App">
                 <form onSubmit={this.handleSubmit}>
@@ -56,6 +65,7 @@ class SearchPage extends Component {
 function mapStateToProps(state) {
     console.log('state',state);
     return {
+        response: state.response,
         redirectToResultsPage: state.redirectToResultsPage,
     }
 }

@@ -7,6 +7,8 @@ import { routes } from "../../services/routes";
 // import {bindActionCreators} from 'redux'
 import {connect} from "react-redux";
 import {Logo} from "../header/logo";
+import {bindActionCreators} from "redux";
+import {clearSearchResponseAction} from "../../redux/actions";
 
 class HeaderBlock extends Component {
     constructor() {
@@ -32,7 +34,7 @@ class HeaderBlock extends Component {
             <div className="App">
                 <header className="App-header">
                     <Logo imageSrc={this.state.imgSource}/>
-                    <Link to={routes.root}  className="App-header">
+                    <Link to={routes.root}  className="App-header" onClick={this.props.clearSearchResponse}>
                             Property Cross {(this.props.searchFieldData) ? '- '+this.props.searchFieldData : ''}
                     </Link>
                     <p>
@@ -62,10 +64,10 @@ function mapStateToProps(state) {
     }
 }
 
-// function mapDispatchToProps(dispatch) {
-//     return {
-//         searchFieldData: bindActionCreators(setSearchFieldAction, dispatch)
-//     }
-// }
+function mapDispatchToProps(dispatch) {
+    return {
+        clearSearchResponse: bindActionCreators(clearSearchResponseAction, dispatch)
+    }
+}
 
-export default connect(mapStateToProps, null)(HeaderBlock);
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderBlock);

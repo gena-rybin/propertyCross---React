@@ -45,14 +45,17 @@ export const redirectToResultsPageReducer = (state = false, action) => {
 export const addToSearchesReducer = (state = [], action) => {
     switch (action.type) {
         case ADD_TO_SEARCHES:
+            console.log(state);
             if (state.length) {
                 let isInside=false;
                 for (let i=0; i<state.length; i++) {
                     if (state[i].search===action.payload.search) {
                         isInside = true;
                     }
+                    console.log(ADD_TO_SEARCHES, action);
                 }
-                if (isInside) {return [...state]; } else {
+                if (ADD_TO_SEARCHES) {return [...state]; } else {
+                    console.log(ADD_TO_SEARCHES, action);
                     return [
                         ...state,
                         {
@@ -61,7 +64,13 @@ export const addToSearchesReducer = (state = [], action) => {
                         }
                     ];
                 }
-            } else return [...state];
+            } else return [
+                ...state,
+                {
+                    'search': action.payload.search,
+                    'results': action.payload.results
+                }
+            ];
         case DELETE_SEARCH_FROM_HISTORY:
             return state.slice().filter(item => {
                 return item.search !== action.payload

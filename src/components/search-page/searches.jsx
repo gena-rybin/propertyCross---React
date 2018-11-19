@@ -3,6 +3,7 @@ import './searches.scss';
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import {deleteSearchFromHistoryAction, fetchSearchByPlaceNameAction, setSearchFieldAction} from "../../redux/actions";
+import {SearchItem} from "./search-item";
 
 
 class Searches extends Component {
@@ -15,7 +16,7 @@ class Searches extends Component {
     // };
 
     handleDeleteBtn = (item) => () => {
-        console.log(item);
+        console.log('DELETE', item);
         this.props.deleteSearchFromHistory(item.search);
     };
 
@@ -39,15 +40,27 @@ class Searches extends Component {
             return (
                 <div className="centered">
                     <div  className="increase-btn">
+                        {/*{this.props.searches.map((search, index) => {*/}
+                            {/*return (*/}
+                                    {/*<SearchItem search={search}*/}
+                                                {/*index={index}*/}
+                                                {/*key={index}*/}
+                                                {/*handleDeleteBtn={this.handleDeleteBtn}*/}
+                                                {/*setSearchFieldBtn={this.setSearchFieldBtn}></SearchItem>*/}
+                                {/*)*/}
+                        {/*})}*/}
                         {this.props.searches.map((search, index) => (
-                            <div className="increase-btn__item" key={search.search + index}
-                                 onClick={this.setSearchFieldBtn(search)}>
-                                <span className="item-index"><span className="hide-on-mobile">Search</span> #{index+1}</span>
-                                <span className="placeName">{search.search}</span>
-                                <span className="placeName align_right">({search.results})</span>
-                                <span className="delete-btn" onClick={this.handleDeleteBtn(search)}>x</span>
+                            <div className="increase-btn__item" key={search.search.toString() + index}>
+                                <div onClick={this.setSearchFieldBtn(search)}>
+                                    <span className="item-index"><span className="hide-on-mobile">Search</span> #{index+1}</span>
+                                    <span className="placeName">{search.search}</span>
+                                    <span className="placeName align_right">({search.results})</span>
+                                </div>
+                                <div>
+                                    <span className="delete-btn" onClick={this.handleDeleteBtn(search)}>x</span>
+                                </div>
                             </div>
-                        ))}
+                            ))}
                     </div>
                 </div>
             );
@@ -55,7 +68,9 @@ class Searches extends Component {
     }
 }
 
+
 function mapStateToProps(state) {
+    console.log('state',state);
     return {
         searches: state.searches
     }

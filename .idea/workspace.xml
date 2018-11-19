@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b4f9416-2fc6-4fc0-a900-4336ede17150" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/search-page/search-item.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/results-page/results-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/results-page/results-page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/search-page/search-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-page/search-page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/main-page-reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/search-page-reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-page/searches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-page/searches.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-page/searches.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-page/searches.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/search-page-reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/search-page-reducers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,10 +35,10 @@
           <entry key="css" value="8" />
           <entry key="html" value="1" />
           <entry key="ico" value="1" />
-          <entry key="js" value="61" />
+          <entry key="js" value="63" />
           <entry key="json" value="7" />
-          <entry key="jsx" value="23" />
-          <entry key="scss" value="35" />
+          <entry key="jsx" value="25" />
+          <entry key="scss" value="36" />
           <entry key="svg" value="1" />
           <entry key="ts" value="1" />
         </counts>
@@ -51,9 +49,9 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="7" />
-          <entry key="JSX Harmony" value="23" />
-          <entry key="JavaScript" value="61" />
-          <entry key="SCSS" value="35" />
+          <entry key="JSX Harmony" value="25" />
+          <entry key="JavaScript" value="63" />
+          <entry key="SCSS" value="36" />
           <entry key="SVG" value="1" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -69,19 +67,19 @@
           <entry key="css" value="61" />
           <entry key="dummy" value="127" />
           <entry key="html" value="5" />
-          <entry key="js" value="1883" />
-          <entry key="jsx" value="2154" />
-          <entry key="scss" value="348" />
+          <entry key="js" value="1902" />
+          <entry key="jsx" value="2248" />
+          <entry key="scss" value="366" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="61" />
           <entry key="HTML" value="5" />
-          <entry key="JSX Harmony" value="2154" />
-          <entry key="JavaScript" value="1883" />
+          <entry key="JSX Harmony" value="2248" />
+          <entry key="JavaScript" value="1902" />
           <entry key="PLAIN_TEXT" value="127" />
-          <entry key="SCSS" value="348" />
+          <entry key="SCSS" value="366" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -92,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/header/header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="272">
               <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -103,43 +101,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/actions/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/search-page/searches.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-177">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/reducers/search-page-reducers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
               <folding>
                 <element signature="e#0#159#0" expanded="true" />
               </folding>
@@ -148,34 +113,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/reducers/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/search-page/search-page.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="350">
+              <caret line="76" column="57" lean-forward="true" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <marker date="1542384807553" expanded="true" signature="984:1129" ph="..." />
+                <marker date="1542642537127" expanded="true" signature="984:1129" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/results-page/results-page.jsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/redux/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="289">
+              <caret line="66" column="29" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/search-page/searches.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/search-page/search-item.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,8 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>react</find>
-      <find>App-link</find>
       <find>showSearchData</find>
       <find>test</find>
       <find>redux-thunk</find>
@@ -215,6 +190,8 @@
       <find>RESPONSE</find>
       <find>searchValue</find>
       <find>redirectToResultsPageAction</find>
+      <find>ADD_TO_SEARCHES</find>
+      <find>value</find>
     </findStrings>
     <dirStrings>
       <dir>C:\g\property\src</dir>
@@ -252,13 +229,16 @@
         <option value="$PROJECT_DIR$/src/redux/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/redux/store.js" />
         <option value="$PROJECT_DIR$/src/redux/constants.js" />
-        <option value="$PROJECT_DIR$/src/components/search-page/searches.jsx" />
         <option value="$PROJECT_DIR$/src/redux/reducers/main-page-reducers.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/redux/actions/index.js" />
         <option value="$PROJECT_DIR$/src/components/header/header.jsx" />
-        <option value="$PROJECT_DIR$/src/components/search-page/search-page.jsx" />
         <option value="$PROJECT_DIR$/src/components/results-page/results-page.jsx" />
+        <option value="$PROJECT_DIR$/src/components/search-page/search-page.jsx" />
+        <option value="$PROJECT_DIR$/src/components/search-page/search-item.jsx" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/search-page-reducers.js" />
+        <option value="$PROJECT_DIR$/src/components/search-page/searches.scss" />
+        <option value="$PROJECT_DIR$/src/components/search-page/searches.jsx" />
       </list>
     </option>
   </component>
@@ -285,9 +265,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="570" />
+    <option name="x" value="635" />
     <option name="y" value="105" />
-    <option name="width" value="1282" />
+    <option name="width" value="1217" />
     <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -388,14 +368,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\g\property\src\redux\reducers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\g\property\src\components\search-page" />
       <recent name="C:\g\property\src\components" />
       <recent name="C:\g\property\src\services" />
       <recent name="C:\g\property\src\redux" />
       <recent name="C:\g\property\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\g\property\src\redux\reducers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,13 +417,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139340000" />
+    <option name="totallyTimeSpent" value="144413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="570" y="105" width="1282" height="872" extended-state="0" />
+    <frame x="635" y="105" width="1217" height="872" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22427653" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23664123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -456,7 +437,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20433018" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20433018" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -539,13 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search-page/searches.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -616,26 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="31" column="73" lean-forward="true" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search-page/searches.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -643,13 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -663,19 +610,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers/search-page-reducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/header/header.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="272">
           <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -684,21 +621,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search-page/search-page.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1542384807553" expanded="true" signature="984:1129" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/results-page/results-page.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-page/search-page.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="76" column="57" lean-forward="true" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1542642537127" expanded="true" signature="984:1129" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/search-page-reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-page/search-item.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-page/searches.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-page/searches.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

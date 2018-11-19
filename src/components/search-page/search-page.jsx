@@ -63,7 +63,8 @@ class SearchPage extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log('state',state);
+
+    // console.log('state',state);
     return {
         response: state.response,
         redirectToResultsPage: state.redirectToResultsPage,

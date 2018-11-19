@@ -45,12 +45,14 @@
         right: -10.5%;
       }
     }
+    div:first-child{ width: 100%}
     .delete-btn {
       color: tomato;
       line-height: 24px;
       width: 10%;
       position: absolute;
       right: -10%;
+      top: -1px;
       &:hover {
         border: 1px tomato dashed;
         font-weight: bold;

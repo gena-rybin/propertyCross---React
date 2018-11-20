@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './searches.scss';
 // import {connect} from "react-redux";
 // import {bindActionCreators} from "redux";
@@ -20,22 +20,18 @@ export const SearchItem = (props) => {
         // this.props.fetchSearchByPlaceName();
     };
 
-    // render() {
-    // if (!(props.search && props.search.search)) {
-    //     return (
-    //         <div></div>
-    //     )
-    // } else {
-        return (
-            <div className="increase-btn__item" onClick={setSearchFieldBtn}>
-                <span className="item-index"><span className="hide-on-mobile">Search</span> #{props.ind+1}</span>
-                <span className="placeName">{props.search}</span>
-                {/*<span className="placeName align_right">({props.search.results})</span>*/}
-                <span className="delete-btn" onClick={handleDeleteBtn}>x</span>
+    return (
+            <div className="increase-btn__item">
+                <div onClick={setSearchFieldBtn}>
+                    <span className="item-index"><span className="hide-on-mobile">Search</span> #{props.index+1}</span>
+                    <span className="placeName">{props.search.search}</span>
+                    <span className="placeName align_right">({props.search.results})</span>
+                </div>
+                <div>
+                    <span className="delete-btn" onClick={handleDeleteBtn}>x</span>
+                </div>
             </div>
-        );
-    // }
-    // }
+    );
 };
 
 // function mapStateToProps(state) {

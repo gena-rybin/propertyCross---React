@@ -21,7 +21,7 @@ class Searches extends Component {
     };
 
     setSearchFieldBtn = (searchObject) => () => {
-        console.log('new SearchField',searchObject);
+        console.log('NEW SearchField',searchObject);
         this.props.setSearchField(searchObject.search);
         this.props.fetchSearchByPlaceName();
     };
@@ -40,27 +40,29 @@ class Searches extends Component {
             return (
                 <div className="centered">
                     <div  className="increase-btn">
-                        {/*{this.props.searches.map((search, index) => {*/}
-                            {/*return (*/}
-                                    {/*<SearchItem search={search}*/}
-                                                {/*index={index}*/}
-                                                {/*key={index}*/}
-                                                {/*handleDeleteBtn={this.handleDeleteBtn}*/}
-                                                {/*setSearchFieldBtn={this.setSearchFieldBtn}></SearchItem>*/}
-                                {/*)*/}
-                        {/*})}*/}
-                        {this.props.searches.map((search, index) => (
-                            <div className="increase-btn__item" key={search.search.toString() + index}>
-                                <div onClick={this.setSearchFieldBtn(search)}>
-                                    <span className="item-index"><span className="hide-on-mobile">Search</span> #{index+1}</span>
-                                    <span className="placeName">{search.search}</span>
-                                    <span className="placeName align_right">({search.results})</span>
-                                </div>
-                                <div>
-                                    <span className="delete-btn" onClick={this.handleDeleteBtn(search)}>x</span>
-                                </div>
-                            </div>
-                            ))}
+                        {this.props.searches.map((search, index) => {
+                            return (
+                                    <SearchItem search={search}
+                                                index={index}
+                                                key={search.search.toString() + index}
+                                                handleDeleteBtn={this.handleDeleteBtn}
+                                                setSearchFieldBtn={this.setSearchFieldBtn}></SearchItem>
+                                )
+                        })}
+
+                        {/*{this.props.searches.map((search, index) => (*/}
+                            {/*<div className="increase-btn__item" key={search.search.toString() + index}>*/}
+                                {/*<div onClick={this.setSearchFieldBtn(search)}>*/}
+                                    {/*<span className="item-index"><span className="hide-on-mobile">Search</span> #{index+1}</span>*/}
+                                    {/*<span className="placeName">{search.search}</span>*/}
+                                    {/*<span className="placeName align_right">({search.results})</span>*/}
+                                {/*</div>*/}
+                                {/*<div>*/}
+                                    {/*<span className="delete-btn" onClick={this.handleDeleteBtn(search)}>x</span>*/}
+                                {/*</div>*/}
+                            {/*</div>*/}
+                        {/*))}*/}
+
                     </div>
                 </div>
             );

@@ -27,9 +27,6 @@ class SearchPage extends Component {
         console.log('submit');
         // this.props.handleParentSubmit();
         this.props.fetchSearchByPlaceName();
-        // if (this.props.response && this.props.response.listings && this.props.response.listings.length) {
-        //
-        // }
     };
 
     render() {

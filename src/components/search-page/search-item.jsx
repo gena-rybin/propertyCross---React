@@ -11,7 +11,7 @@ export const SearchItem = (props) => {
 
     const handleDeleteBtn = () => {
         console.log('delete', props.search);
-        props.handleDeleteBtn(props.search);
+        props.onHandleDeleteBtn(props.search);
     };
 
     const setSearchFieldBtn = () => {

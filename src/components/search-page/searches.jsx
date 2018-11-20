@@ -45,7 +45,7 @@ class Searches extends Component {
                                     <SearchItem search={search}
                                                 index={index}
                                                 key={search.search.toString() + index}
-                                                handleDeleteBtn={this.handleDeleteBtn}
+                                                onHandleDeleteBtn={this.handleDeleteBtn}
                                                 setSearchFieldBtn={this.setSearchFieldBtn}></SearchItem>
                                 )
                         })}

@@ -45,7 +45,21 @@
         right: -10.5%;
       }
     }
-    div:first-child{ width: 100%}
+    div:first-child{
+      width: 100%;
+      .item-index{
+        .hide-on-mobile{}
+        font-size: calc(8px + 1vmin);
+      }
+      .placeName{
+        text-align: left;
+        color: $color-gray11;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 10vw;
+        min-width: 40px;
+      }
+    }
     .delete-btn {
       color: tomato;
       line-height: 24px;
@@ -60,18 +74,6 @@
       }
     }
 
-    .item-index{
-      .hide-on-mobile{}
-      font-size: calc(8px + 1vmin);
-    }
-    .placeName{
-      text-align: left;
-      color: $color-gray11;
-      padding-left: 20px;
-      padding-right: 20px;
-      width: 10vw;
-      min-width: 40px;
-    }
     &:last-child {
       margin-right: 0;
     }

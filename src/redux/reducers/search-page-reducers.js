@@ -45,17 +45,14 @@ export const redirectToResultsPageReducer = (state = false, action) => {
 export const addToSearchesReducer = (state = [], action) => {
     switch (action.type) {
         case ADD_TO_SEARCHES:
-            console.log(state);
             if (state.length) {
                 let isInside=false;
                 for (let i=0; i<state.length; i++) {
                     if (state[i].search===action.payload.search) {
                         isInside = true;
                     }
-                    console.log(ADD_TO_SEARCHES, action);
                 }
-                if (ADD_TO_SEARCHES) {return [...state]; } else {
-                    console.log(ADD_TO_SEARCHES, action);
+                if (isInside) {return [...state]; } else {
                     return [
                         ...state,
                         {

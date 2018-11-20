@@ -15,12 +15,12 @@ class Searches extends Component {
     //     this.props.fetchSearchByPlaceName();
     // };
 
-    handleDeleteBtn = (item) => () => {
-        console.log('DELETE', item);
-        this.props.deleteSearchFromHistory(item.search);
+    handleDeleteBtn = (searchObject) => {
+        console.log('DELETE', searchObject);
+        this.props.deleteSearchFromHistory(searchObject.search);
     };
 
-    setSearchFieldBtn = (searchObject) => () => {
+    setSearchFieldBtn = (searchObject) => {
         console.log('NEW SearchField',searchObject);
         this.props.setSearchField(searchObject.search);
         this.props.fetchSearchByPlaceName();
@@ -46,7 +46,7 @@ class Searches extends Component {
                                                 index={index}
                                                 key={search.search.toString() + index}
                                                 onHandleDeleteBtn={this.handleDeleteBtn}
-                                                setSearchFieldBtn={this.setSearchFieldBtn}></SearchItem>
+                                                onSetSearchFieldBtn={this.setSearchFieldBtn}></SearchItem>
                                 )
                         })}
 

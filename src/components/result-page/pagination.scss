@@ -1,0 +1,11 @@
+@import "../../media/variables";
+
+.clickable{
+  cursor: pointer;
+  &:hover{
+    color: $color-green;
+  }
+}
+.activePage{
+  color: $color-green;
+}

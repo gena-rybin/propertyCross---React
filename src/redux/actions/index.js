@@ -30,7 +30,7 @@ export function fetchSearchByPlaceNameAction(_page) {
         const placeName = store.getState().search;
         const page = _page ? _page : '1';
         const url = `${apiEndpoints.buy}&page=${page}&place_name=${placeName}`;
-        // console.log('url',url);
+        console.log('url',url, 'page',page);
         HttpFetch.get(url)
             .then(res => {
                 console.log('fetchSearchByPlaceNameAction', res);

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
 import './App.scss';
 import SearchPage from "./components/search-page/search-page";
-import ResultsPage from "./components/results-page/results-page";
+import ResultsPage from "./components/result-page/result-page";
 import HeaderBlock from "./components/header/header";
 import {routes} from "./services/routes";
 import {NotFound} from "./components/error-page/not-found";

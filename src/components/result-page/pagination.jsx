@@ -37,15 +37,15 @@ export class Pagination extends React.Component {
         const isPrevDotted = +this.props.activePage>3;
         const isPrevPage = +this.props.activePage>1;
         const isNextPage = (+this.props.activePage + 1) <= +this.props.totalPages;
-        const isNextDotted = +this.props.totalPages>2 && +this.props.activePage+1<+this.props.totalPages;
-        const isLastPage = +this.props.totalPages > 2;
+        const isNextDotted = +this.props.totalPages>3 && +this.props.activePage+2<+this.props.totalPages;
+        const isLastPage = +this.props.totalPages > 2 && +this.props.activePage+1<+this.props.totalPages;
         console.log(this.props);
         return (
             <div>
                     {isFirstPage && <span className="clickable" onClick={this.firstPageClicked}>#1</span>}
                     {isPrevDotted && <span className="clickable" onClick={this.prevDottedClicked}>...</span>}
                     {isPrevPage && <span className="clickable" onClick={this.prevClicked}>#{this.props.activePage-1}</span>}
-                    <span className="activePage">#{this.props.activePage}</span>
+                    <span className="activePage"> page {this.props.activePage} </span>
                     {isNextPage && <span className="clickable" onClick={this.nextPageClicked}>#{this.props.activePage+1}</span>}
                     {isNextDotted && <span className="clickable" onClick={this.nextDottedClicked}>...</span>}
                     {isLastPage && <span className="clickable" onClick={this.lastPageClicked}>#{this.props.totalPages}</span>}

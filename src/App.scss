@@ -1,3 +1,5 @@
+@import "./media/variables";
+
 .App {
   text-align: center;
 }
@@ -10,6 +12,85 @@
   -webkit-animation-name: run;
   -webkit-animation-duration: 10s;
   height: 2vmin;
+}
+.clear {
+  clear: both;
+}
+.red {color: $color-pink;}
+.right{float: right;}
+
+.listing{
+  width: 100%;
+  height: 10vmin;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  flex-basis: 25%;
+  margin: 0;
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 500;
+  font-size: calc(8px + 1vmin);
+  color: #6b7881;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  display: flex;
+  justify-content: left;
+  padding-top: 0.2vmin;
+  padding-bottom: 0.2vmin;
+  overflow: hidden;
+  &:hover {
+    background-color: $color-gray1;
+  }
+  .listing-item{
+    width: 100%;
+    position: relative;
+    .listing-options{
+      display: inline-block;
+      max-width: 32%;
+      .listing-index{
+        display: inline-block;
+        height: 10vmin;
+        vertical-align: middle;
+        min-width: calc(16px + 2vmin);
+      }
+      .listing-img {
+        height: 10vmin;
+        img{
+          height: 10vmin;
+        }
+      }
+      &:before{
+        //content: "";
+        //display: inline-block;
+        //height: 100%;
+        //vertical-align: middle;
+      }
+    }
+    .listing-text{
+      display: inline-block;
+      max-width: 60%;
+      margin-left: 2%;
+      p{
+        margin: 0;
+      }
+      p:first-child{
+        text-align: center;
+        span:first-child{
+          float: left;
+        }
+      }
+      div{
+        width: 100%;
+        height: 10px;
+      }
+      p:last-child{
+        font-size: calc(5px + 1vmin);
+        color: $color-gray10;
+      }
+    }
+  }
+
 }
 
 .App-header {

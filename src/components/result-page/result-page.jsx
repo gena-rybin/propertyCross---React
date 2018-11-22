@@ -33,30 +33,31 @@ class ResultPage extends Component {
             )
         } else {
             return (
-                <div className="centered">
+                <div className="wrapper centered">
                     results page
                     <br/><br/>
+
                     {this.props.listings.length} ({this.props.total_results})
                     <br/>
-                    <div  className="increase-btn">
+                    <div className="content increase-btn">
                         {this.props.listings.map((listing, index) => {
                             return (
                                 <ResultItem data={listing}
                                             index={index}
+                                            activePage={this.props.activePage}
                                             key={index}></ResultItem>
                             )
                         })}
 
                     </div>
-                    <br/>
-                    <hr/>
-                    <span>page {this.props.activePage}</span>
-
-                    <Pagination
-                        activePage={this.props.activePage}
-                        totalPages={this.props.totalPages}
-                        onChangePage={this.changePage}
-                    ></Pagination>
+                    <div className="footer">
+                        <hr/>
+                        <Pagination
+                            activePage={this.props.activePage}
+                            totalPages={this.props.totalPages}
+                            onChangePage={this.changePage}
+                        ></Pagination>
+                    </div>
 
                 </div>
             );

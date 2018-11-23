@@ -3,7 +3,6 @@ import './result-page.scss';
 import {bindActionCreators} from 'redux'
 import {connect} from "react-redux";
 import {
-    clearSearchResponseAction,
     fetchSearchByPlaceNameAction,
     redirectToResultsPageAction
 } from "../../redux/actions";
@@ -20,6 +19,12 @@ class ResultPage extends Component {
     changePage = (newPage) => {
         console.log('go to ',newPage);
         this.props.fetchSearchByPlaceName(newPage);
+    };
+
+    viewListingDetails = (url) => {
+        console.log(url);
+        window.open(url, '_blank');
+        // lister_url
     };
 
     render() {
@@ -45,6 +50,7 @@ class ResultPage extends Component {
                                 <ResultItem data={listing}
                                             index={index}
                                             activePage={this.props.activePage}
+                                            onViewListingDetails={this.viewListingDetails}
                                             key={index}></ResultItem>
                             )
                         })}
@@ -77,7 +83,6 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        // clearSearchResponse: bindActionCreators(clearSearchResponseAction, dispatch),
         redirectToResultsPage: bindActionCreators(redirectToResultsPageAction, dispatch),
         fetchSearchByPlaceName: bindActionCreators(fetchSearchByPlaceNameAction, dispatch),
     }

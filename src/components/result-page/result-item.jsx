@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './result-item.scss';
 
 export class ResultItem extends React.Component {
@@ -13,17 +13,22 @@ export class ResultItem extends React.Component {
         this.props.onSetSearchFieldBtn(this.props.search);
     };
 
+    viewListingDetails = () => {
+        // console.log('new SearchField',this.props.search);
+        this.props.onViewListingDetails(this.props.data.lister_url);
+    };
+
     render() {
         console.log(this.props);
         const tens = (this.props.activePage > 1) ? 10*(+this.props.activePage) : 0;
 
         return (
-            <div className="listing">
+            <div className="listing" onClick={this.viewListingDetails}>
                 <div className="listing-item">
                     <div className="listing-options">
                         <span className="listing-index">#{this.props.index+1+tens}</span>
                         {/*<span className="listing-img hide-on-mobile">*/}
-                            <img  className="listing-img hide-on-mobile" src={this.props.data.img_url} alt="image-listing" />
+                            <img className="listing-img hide-on-mobile" src={this.props.data.img_url} alt="listing" />
                         {/*</span>*/}
                     </div>
                     <div className="listing-text">

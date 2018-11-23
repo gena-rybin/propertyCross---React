@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './searches.scss';
 
 export class SearchItem extends React.Component {

@@ -4,7 +4,7 @@ import {bindActionCreators} from 'redux'
 import {fetchSearchByPlaceNameAction, setSearchFieldAction} from "../../redux/actions";
 import {connect} from "react-redux";
 import SearchesComponent from "./searches";
-import {Link, Redirect} from "react-router-dom";
+import {Redirect} from "react-router-dom";
 import {routes} from "../../services/routes";
 
 

@@ -38,19 +38,23 @@ class HeaderBlock extends Component {
                             Property Cross {(this.props.searchFieldData) ? '- '+this.props.searchFieldData : ''}
                     </Link>
                     <p>
-                    <a className="App-link"
-                       href="https://github.com/tastejs/PropertyCross/tree/master/specification"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        specification
-                    </a>
-                        {/*<span style={{width:'20px'}}>cs</span>*/}
-                    <a className="App-link"
-                       href="https://www.nestoria.co.uk/help/api-search-listings"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        api
-                    </a></p>
+                        <a className="App-link"
+                           href="https://github.com/tastejs/PropertyCross/tree/master/specification"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            specification
+                        </a>
+                            {/*<span style={{width:'20px'}}>cs</span>*/}
+                        <a className="App-link"
+                           href="https://www.nestoria.co.uk/help/api-search-listings"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            api
+                        </a>
+                        <Link to={routes.favourites}  className="App-link">
+                            favourites
+                        </Link>
+                    </p>
                 </header>
             </div>
         );

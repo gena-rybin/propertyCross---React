@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './pagination.scss';
 
 export class Pagination extends React.Component {

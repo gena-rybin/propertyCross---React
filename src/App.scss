@@ -41,6 +41,12 @@
   overflow: hidden;
   &:hover {
     background-color: $color-gray1;
+    .listing-text{
+      p:last-child{
+        //color: $color-label;
+        color: $color-label !important;
+      }
+    }
   }
   .listing-item{
     width: 100%;
@@ -76,6 +82,7 @@
       }
       p:first-child{
         text-align: center;
+        min-width: 30vmin;
         span:first-child{
           float: left;
         }

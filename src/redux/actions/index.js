@@ -4,7 +4,7 @@ import {
     ADD_TO_SEARCHES,
     DELETE_SEARCH_FROM_HISTORY,
     REDIRECT_TO_RESULTS_PAGE,
-    CLEAR_RESPONSE
+    CLEAR_RESPONSE, ADD_TO_FAVOURITES
 } from '../constants';
 import { HttpFetch } from "../../services/http";
 import { apiEndpoints } from "../../services/api-endpoints";
@@ -73,5 +73,12 @@ export function deleteSearchFromHistoryAction(searchData) {
     return {
         type: DELETE_SEARCH_FROM_HISTORY,
         payload: searchData
+    };
+}
+
+export function addToFavouritesAction(data) {
+    return {
+        type: ADD_TO_FAVOURITES,
+        payload: data
     };
 }

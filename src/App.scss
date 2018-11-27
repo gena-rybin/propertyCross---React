@@ -53,17 +53,28 @@
     position: relative;
     .listing-options{
       display: inline-block;
-      max-width: 32%;
-      .listing-index{
+      max-width: 44%;
+      .favs-wrapper{
         display: inline-block;
-        height: 10vmin;
-        vertical-align: middle;
-        min-width: calc(16px + 2vmin);
+      }
+      span{
+        padding: 4px;
+        //height: 10vmin;
+
+        position: relative;
+        top: -4vmin;
+
+        .listing-index{
+          //display: inline-block;
+          //height: 10vmin;
+          //vertical-align: middle;
+          min-width: calc(16px + 2vmin);
+        }
       }
       .listing-img {
         height: 10vmin;
         img{
-          height: 10vmin;
+          //height: 10vmin;
         }
       }
       &:before{
@@ -75,14 +86,14 @@
     }
     .listing-text{
       display: inline-block;
-      max-width: 60%;
+      max-width: 52%;
       margin-left: 2%;
       p{
         margin: 0;
       }
       p:first-child{
         text-align: center;
-        min-width: 30vmin;
+        min-width: 36vmin;
         span:first-child{
           float: left;
         }

@@ -26,6 +26,11 @@ export class ResultItem extends React.Component {
             <div className="listing" onClick={this.viewListingDetails}>
                 <div className="listing-item">
                     <div className="listing-options">
+                        <div className="favs-wrapper">
+                            {false && <span>add to fav</span>}
+                            {false && <span>fav</span>}
+                            {true && <span>rem from fav</span>}
+                        </div>
                         <span className="listing-index">#{this.props.index+1+tens}</span>
                         {/*<span className="listing-img hide-on-mobile">*/}
                             <img className="listing-img hide-on-mobile" src={this.props.data.img_url} alt="listing" />

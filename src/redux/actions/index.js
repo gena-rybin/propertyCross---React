@@ -69,6 +69,7 @@ export function addToSearchesAction(searchData) {
     };
 }
 
+
 export function deleteSearchFromHistoryAction(searchData) {
     return {
         type: DELETE_SEARCH_FROM_HISTORY,

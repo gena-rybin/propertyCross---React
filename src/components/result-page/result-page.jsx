@@ -6,7 +6,7 @@ import {
     fetchSearchByPlaceNameAction,
     redirectToResultsPageAction
 } from "../../redux/actions";
-import {ResultItem} from "./result-item";
+import ResultItem from "./result-item";
 import {Pagination} from "./pagination";
 
 
@@ -73,6 +73,7 @@ class ResultPage extends Component {
 }
 
 function mapStateToProps(state) {
+    console.log('state favourites ' + state.favouritesReducer.length,state.favouritesReducer);
     return {
         listings: state.response.listings,
         total_results: state.response.total_results,

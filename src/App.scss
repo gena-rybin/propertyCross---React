@@ -56,6 +56,13 @@
       max-width: 44%;
       .favs-wrapper{
         display: inline-block;
+        span{
+          padding-top: 2vmin;
+          padding-bottom: 2vmin;
+        }
+        &:hover{
+          color: $color-white;
+        }
       }
       span{
         padding: 4px;

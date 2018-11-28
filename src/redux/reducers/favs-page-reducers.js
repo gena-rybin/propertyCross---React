@@ -1,4 +1,4 @@
-import {ADD_TO_FAVOURITES, DELETE_FAV_FROM_FAVOURITES, DELETE_SEARCH_FROM_HISTORY, FAVS} from "../constants";
+import {ADD_TO_FAVOURITES, DELETE_FROM_FAVOURITES, DELETE_SEARCH_FROM_HISTORY, FAVS} from "../constants";
 
 export const favouritesReducer = (state = [], action) => {
     switch (action.type) {
@@ -21,11 +21,11 @@ export const favouritesReducer = (state = [], action) => {
                 ...state,
                 action.payload
             ];
-        case DELETE_FAV_FROM_FAVOURITES:
-            return [...state];
-            // return state.slice().filter(item => {
-            //     return item.search !== action.payload
-            // });
+        case DELETE_FROM_FAVOURITES:
+            // return [...state];
+            return state.slice().filter(item => {
+                return item.thumb_url !== action.payload.thumb_url
+            });
         case FAVS:
             return [...state];
         default:

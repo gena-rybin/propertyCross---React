@@ -56,12 +56,27 @@
       max-width: 44%;
       .favs-wrapper{
         display: inline-block;
+        min-width: 14vmin;
         span{
           padding-top: 2vmin;
           padding-bottom: 2vmin;
         }
+        .favs-hide-on-hover{
+          display: inline-block;
+          color: red;
+        }
+        .favs-show-on-hover{
+          display: none;
+        }
         &:hover{
           color: $color-white;
+          .favs-show-on-hover{
+            display: inline-block;
+            color: red;
+          }
+          .favs-hide-on-hover{
+            display: none;
+          }
         }
       }
       span{
@@ -72,10 +87,11 @@
         top: -4vmin;
 
         .listing-index{
+          color: red;
           //display: inline-block;
           //height: 10vmin;
           //vertical-align: middle;
-          min-width: calc(16px + 2vmin);
+          min-width: 50px;
         }
       }
       .listing-img {

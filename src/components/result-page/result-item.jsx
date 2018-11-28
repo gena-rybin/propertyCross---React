@@ -1,7 +1,7 @@
 import React from 'react';
 import './result-item.scss';
 import {bindActionCreators} from "redux";
-import {addToFavouritesAction} from "../../redux/actions";
+import {addToFavouritesAction, deleteFromFavouritesAction} from "../../redux/actions";
 import connect from "react-redux/es/connect/connect";
 
 class ResultItem extends React.Component {
@@ -10,8 +10,11 @@ class ResultItem extends React.Component {
     };
 
     addToFavourites = () => {
-        console.log('addToFavourites',this.props.data);
         this.props.addToFavourites(this.props.data);
+    };
+
+    deleteFromFavourites = () => {
+        this.props.deleteFromFavourites(this.props.data);
     };
 
     checkFavourites = () => {
@@ -36,8 +39,10 @@ class ResultItem extends React.Component {
                 <div className="listing-item">
                     <div className="listing-options">
                         <div className="favs-wrapper">
-                            {!isInFavs && <span onClick={this.addToFavourites}>add to fav</span>}
-                            {isInFavs && <span>rem from fav</span>}
+                            {!isInFavs && <span className="favs-hide-on-hover"> </span>}
+                            {!isInFavs && <span className="favs-show-on-hover" onClick={this.addToFavourites}>add to fav</span>}
+                            {isInFavs &&  <span className="favs-show-on-hover" onClick={this.deleteFromFavourites}>rem from fav</span>}
+                            {isInFavs &&  <span className="favs-hide-on-hover">fav</span>}
                         </div>
                         <span className="listing-index" onClick={this.viewListingDetails}>#{this.props.index+1+tens}</span>
                         {/*<span className="listing-img hide-on-mobile">*/}
@@ -72,6 +77,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         addToFavourites: bindActionCreators(addToFavouritesAction, dispatch),
+        deleteFromFavourites: bindActionCreators(deleteFromFavouritesAction, dispatch),
     }
 }
 
